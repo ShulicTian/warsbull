@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * 系统角色Entity
@@ -29,6 +30,12 @@ public class Role extends BaseEntity {
 
     @Column(name = "useable")
     private String useable;
+
+    @OneToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "tsys_role_menu",
+            joinColumns = {@JoinColumn(name = "role_id")},
+            inverseJoinColumns = {@JoinColumn(name = "menu_id")})
+    private List<Menu> menuList;
 
     @Transient
     private User user;

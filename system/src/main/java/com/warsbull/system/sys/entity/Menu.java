@@ -8,8 +8,7 @@ import com.warsbull.system.common.entity.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 /**
@@ -24,18 +23,27 @@ import java.util.List;
 @EqualsAndHashCode(callSuper = true)
 public class Menu extends BaseEntity {
 
-    private static final long serialVersionUID = 1L;
+    @OneToOne
+    @JoinColumn(name = "parent_id", referencedColumnName = "id")
     private Menu parent;
-    private String parentIds;
-    private String name;
-    private String href;
-    private String target;
-    private String icon;
-    private Integer sort;
-    private String isShow;
-    private String permission;
 
-    private String userId;
+    @Column(name = "parent_ids")
+    private String parentIds;
+
+    @Column(name = "name")
+    private String name;
+
+    @Column(name = "href")
+    private String href;
+
+    @Column(name = "sort")
+    private Integer sort;
+
+    @Column(name = "isShow")
+    private String isShow;
+
+    @Column(name = "permission")
+    private String permission;
 
     public Menu() {
         super();

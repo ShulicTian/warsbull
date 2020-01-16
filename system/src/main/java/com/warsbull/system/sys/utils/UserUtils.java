@@ -1,10 +1,13 @@
 package com.warsbull.system.sys.utils;
 
+import com.google.common.collect.Lists;
 import com.warsbull.system.common.entity.Principal;
 import com.warsbull.system.common.utils.CacheUtils;
 import com.warsbull.system.common.utils.SpringContextHolder;
 import com.warsbull.system.sys.entity.Menu;
+import com.warsbull.system.sys.entity.Role;
 import com.warsbull.system.sys.entity.User;
+import com.warsbull.system.sys.service.MenuService;
 import com.warsbull.system.sys.service.UserService;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.UnavailableSecurityManagerException;
@@ -14,6 +17,8 @@ import org.apache.shiro.subject.Subject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -30,6 +35,7 @@ public class UserUtils {
     public static final String USER_CACHE_LOGIN_NAME_ = "loginName_";
     private static Logger logger = LoggerFactory.getLogger(UserUtils.class);
     private static UserService userService = SpringContextHolder.getBean(UserService.class);
+    private static MenuService menuService = SpringContextHolder.getBean(MenuService.class);
 
     /**
      * 获取当前用户授权菜单
@@ -42,14 +48,16 @@ public class UserUtils {
         if (menuList == null) {
             User user = getCurrentUser();
             if (user.isAdmin()) {
-//                menuList = menuDao.findAllList(new Menu());
+                menuList = menuService.findAllList();
             } else {
-                Menu m = new Menu();
-                m.setUserId(user.getId());
-//                menuList = menuDao.findByUserId(m);
+                List<Menu> finalMenuList = Lists.newArrayList();
+                List<Role> roleList = getCurrentUser().getRoleList();
+                roleList.forEach(role -> finalMenuList.addAll(role.getMenuList()));
+                menuList = finalMenuList;
             }
             putCache(CACHE_MENU_LIST, menuList);
         }
+        logger.debug("【UserUtils】获取菜单列表");
         return menuList;
     }
 
