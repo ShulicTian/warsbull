@@ -1,0 +1,646 @@
+2020-01-16 10:52:37.478 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 9504 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 10:52:37.505 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 10:52:38.114 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 10:52:38.116 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 10:52:38.180 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57ms. Found 1 JPA repository interfaces.
+2020-01-16 10:52:38.195 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 10:52:38.196 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 10:52:38.213 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 10:52:38.213 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-01-16 10:52:38.468 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:38.468 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$708a512b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:38.482 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:38.766 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:38.966 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 10:52:38.967 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 10:52:38.974 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.006 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.018 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.051 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.055 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.134 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.204 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.213 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$bb58d875] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:52:39.477 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 10:52:39.487 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 10:52:39.487 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 10:52:39.488 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 10:52:39.592 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 10:52:39.592 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2049 ms
+2020-01-16 10:52:39.900 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 10:52:39.981 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 10:52:40.139 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 10:52:40.297 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 10:52:40.448 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 10:52:40.662 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 10:52:42.605 - WARN  [main] hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table tsys_user_role 
+       add constraint FKkmws33obrfo08ckumlllomnf2 
+       foreign key (user_id) 
+       references tsys_user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table tsys_user_role 
+       add constraint FKkmws33obrfo08ckumlllomnf2 
+       foreign key (user_id) 
+       references tsys_user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at com.warsbull.BlogApplication.main(BlogApplication.java:15) [classes/:?]
+Caused by: java.sql.SQLException: Cannot add foreign key constraint
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.alibaba.druid.pool.DruidPooledStatement.execute(DruidPooledStatement.java:497) ~[druid-1.1.0.jar:1.1.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	... 33 more
+2020-01-16 10:52:42.615 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 10:52:42.625 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 10:52:43.568 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 10:52:43.965 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 10:52:44.124 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 10:52:44.127 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 7.128 seconds (JVM running for 10.262)
+2020-01-16 10:56:23.028 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 10900 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 10:56:23.036 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 10:56:23.834 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 10:56:23.838 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 10:56:23.933 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
+2020-01-16 10:56:23.949 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 10:56:23.950 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 10:56:23.969 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 10:56:23.969 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-01-16 10:56:24.443 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.444 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$21a6d6f1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.456 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.731 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.903 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 10:56:24.905 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 10:56:24.908 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.937 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.951 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.985 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:24.990 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:25.075 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:25.151 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:25.159 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$6c755e3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:56:25.507 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 10:56:25.516 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 10:56:25.517 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 10:56:25.518 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 10:56:25.625 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 10:56:25.625 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2544 ms
+2020-01-16 10:56:25.939 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 10:56:26.009 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 10:56:26.147 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 10:56:26.279 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 10:56:26.375 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 10:56:26.554 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 10:56:27.487 - WARN  [main] hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table tsys_user_role 
+       add constraint FKkmws33obrfo08ckumlllomnf2 
+       foreign key (user_id) 
+       references tsys_user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table tsys_user_role 
+       add constraint FKkmws33obrfo08ckumlllomnf2 
+       foreign key (user_id) 
+       references tsys_user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at com.warsbull.BlogApplication.main(BlogApplication.java:15) [classes/:?]
+Caused by: java.sql.SQLException: Cannot add foreign key constraint
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.alibaba.druid.pool.DruidPooledStatement.execute(DruidPooledStatement.java:497) ~[druid-1.1.0.jar:1.1.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	... 33 more
+2020-01-16 10:56:27.495 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 10:56:27.504 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 10:56:28.446 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 10:56:28.855 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 10:56:28.882 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 10:56:28.887 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 6.229 seconds (JVM running for 7.815)
+2020-01-16 10:58:20.481 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 11528 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 10:58:20.490 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 10:58:21.112 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 10:58:21.114 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 10:58:21.202 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 1 JPA repository interfaces.
+2020-01-16 10:58:21.219 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 10:58:21.220 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 10:58:21.239 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 10:58:21.239 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2020-01-16 10:58:21.525 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:21.525 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$bb5ba1e4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:21.538 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:21.826 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.040 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 10:58:22.042 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 10:58:22.045 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.073 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.085 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.120 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.124 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.210 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.290 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.297 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$62a292e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 10:58:22.588 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 10:58:22.598 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 10:58:22.599 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 10:58:22.599 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 10:58:22.712 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 10:58:22.712 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2185 ms
+2020-01-16 10:58:23.022 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 10:58:23.107 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 10:58:23.281 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 10:58:23.419 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 10:58:23.526 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 10:58:23.718 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 10:58:25.588 - WARN  [main] hibernate.tool.schema.internal.ExceptionHandlerLoggedImpl : GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table tsys_user_role 
+       add constraint FKkmws33obrfo08ckumlllomnf2 
+       foreign key (user_id) 
+       references tsys_user (id)" via JDBC Statement
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table tsys_user_role 
+       add constraint FKkmws33obrfo08ckumlllomnf2 
+       foreign key (user_id) 
+       references tsys_user (id)" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:559) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:504) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applyForeignKeys(AbstractSchemaMigrator.java:433) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:249) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:184) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:73) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:320) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:462) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1249) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1855) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1792) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1108) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:868) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) [spring-context-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.2.RELEASE.jar:2.2.2.RELEASE]
+	at com.warsbull.BlogApplication.main(BlogApplication.java:15) [classes/:?]
+Caused by: java.sql.SQLException: Cannot add foreign key constraint
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:782) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:666) ~[mysql-connector-java-8.0.16.jar:8.0.16]
+	at com.alibaba.druid.pool.DruidPooledStatement.execute(DruidPooledStatement.java:497) ~[druid-1.1.0.jar:1.1.0]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.4.7.Final.jar:5.4.7.Final]
+	... 33 more
+2020-01-16 10:58:25.595 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 10:58:25.606 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 10:58:26.553 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 10:58:26.956 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 10:58:26.980 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 10:58:26.982 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 6.843 seconds (JVM running for 8.498)
+2020-01-16 11:07:00.296 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 3076 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:07:00.304 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:07:00.897 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:07:00.899 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:07:00.977 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 1 JPA repository interfaces.
+2020-01-16 11:07:00.990 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:07:00.991 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:07:01.009 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:07:01.009 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 0 Redis repository interfaces.
+2020-01-16 11:07:01.279 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.280 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$e4d34913] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.295 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.579 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.766 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:07:01.769 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:07:01.774 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.802 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.816 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.853 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.858 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:01.959 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:02.035 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:02.042 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$2fa1d05d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:02.335 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:07:02.343 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:07:02.344 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:07:02.344 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:07:02.461 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:07:02.461 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2119 ms
+2020-01-16 11:07:02.785 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:07:02.857 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:07:03.019 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:07:03.179 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:07:03.295 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:07:03.506 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:07:05.099 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:07:05.107 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:07:06.077 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:07:06.484 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:07:06.511 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:07:06.512 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 6.571 seconds (JVM running for 8.286)
+2020-01-16 11:07:49.012 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 4112 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:07:49.021 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:07:49.607 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:07:49.610 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:07:49.682 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 JPA repository interfaces.
+2020-01-16 11:07:49.696 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:07:49.697 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:07:49.715 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:07:49.715 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-01-16 11:07:49.989 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:49.989 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$ba228faa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.003 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.291 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.474 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:07:50.476 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:07:50.480 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.509 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.522 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.558 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.562 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.645 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.722 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:50.729 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$4f116f4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:07:51.002 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:07:51.011 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:07:51.011 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:07:51.012 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:07:51.118 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:07:51.119 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2055 ms
+2020-01-16 11:07:51.415 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:07:51.487 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:07:51.637 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:07:51.775 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:07:51.872 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:07:52.061 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:07:52.656 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:07:52.663 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:07:53.583 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:07:53.959 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:07:53.983 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:07:53.984 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 5.33 seconds (JVM running for 6.82)
+2020-01-16 11:08:44.202 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 5896 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:08:44.212 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:08:44.808 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:08:44.810 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:08:44.883 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 JPA repository interfaces.
+2020-01-16 11:08:44.896 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:08:44.897 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:08:44.914 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:08:44.914 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-01-16 11:08:45.181 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.182 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$ad50c683] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.194 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.479 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.642 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:08:45.644 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:08:45.648 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.676 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.691 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.727 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.731 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.819 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.891 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:45.898 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$f81f4dcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:08:46.170 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:08:46.179 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:08:46.180 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:08:46.180 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:08:46.286 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:08:46.286 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2036 ms
+2020-01-16 11:08:46.596 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:08:46.691 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:08:46.856 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:08:46.996 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:08:47.102 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:08:47.314 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:08:47.976 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:08:47.985 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:08:48.943 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:08:49.337 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:08:49.362 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:08:49.364 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 5.529 seconds (JVM running for 7.1)
+2020-01-16 11:44:30.390 - INFO  [http-nio-8088-exec-1] tomcat.util.http.parser.Cookie : A cookie header was received [1578384938; JSESSIONID=1F7624CB358F5294992A2B0B2BF9FC4C] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-01-16 11:44:30.397 - INFO  [http-nio-8088-exec-1] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 11:44:30.397 - INFO  [http-nio-8088-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-01-16 11:44:30.409 - INFO  [http-nio-8088-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 12 ms
+2020-01-16 11:46:13.503 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 2188 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:46:13.516 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:46:14.265 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:46:14.265 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:46:14.340 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 1 JPA repository interfaces.
+2020-01-16 11:46:14.356 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:46:14.357 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:46:14.377 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:46:14.377 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-01-16 11:46:14.669 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:14.670 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$9534cac4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:14.683 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.102 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.367 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:46:15.370 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:46:15.375 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.414 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.430 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.473 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.478 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.619 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.750 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:15.758 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$e003520e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:46:16.038 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:46:16.047 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:46:16.048 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:46:16.049 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:46:16.153 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:46:16.153 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2582 ms
+2020-01-16 11:46:16.495 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:46:16.665 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:46:17.024 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:46:17.209 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:46:17.318 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:46:17.501 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:46:18.225 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:46:18.233 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:46:19.495 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:46:19.867 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:46:19.888 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:46:19.890 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 6.788 seconds (JVM running for 8.345)
+2020-01-16 11:47:18.547 - INFO  [http-nio-8088-exec-1] tomcat.util.http.parser.Cookie : A cookie header was received [1578384938; JSESSIONID=477F10A2DC9A7BECFADB447C211FB27E] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-01-16 11:47:18.554 - INFO  [http-nio-8088-exec-1] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 11:47:18.554 - INFO  [http-nio-8088-exec-1] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-01-16 11:47:18.564 - INFO  [http-nio-8088-exec-1] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 10 ms
+2020-01-16 11:47:34.227 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 1160 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:47:34.236 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:47:35.073 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:47:35.077 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:47:35.175 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+2020-01-16 11:47:35.190 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:47:35.191 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:47:35.224 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:47:35.224 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-01-16 11:47:35.505 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:35.506 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$79618768] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:35.526 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:35.808 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:35.968 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:47:35.970 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:47:35.974 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.002 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.014 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.054 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.058 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.144 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.220 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.227 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$c4300eb2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:47:36.496 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:47:36.505 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:47:36.506 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:47:36.506 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:47:36.617 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:47:36.617 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2338 ms
+2020-01-16 11:47:36.919 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:47:36.991 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:47:37.136 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:47:37.275 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:47:37.374 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:47:37.558 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:47:38.226 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:47:38.233 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:47:39.118 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:47:39.488 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:47:39.509 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:47:39.511 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 5.671 seconds (JVM running for 7.517)
+2020-01-16 11:47:51.466 - INFO  [http-nio-8088-exec-2] tomcat.util.http.parser.Cookie : A cookie header was received [1578384938; JSESSIONID=EECC43089B3304FD0E7D344CE81D0769] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-01-16 11:47:51.473 - INFO  [http-nio-8088-exec-2] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 11:47:51.473 - INFO  [http-nio-8088-exec-2] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-01-16 11:47:51.482 - INFO  [http-nio-8088-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 9 ms
+2020-01-16 11:50:29.671 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 8528 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:50:29.682 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:50:30.617 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:50:30.620 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:50:30.699 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 67ms. Found 1 JPA repository interfaces.
+2020-01-16 11:50:30.711 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:50:30.712 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:50:30.728 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:50:30.728 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-01-16 11:50:30.967 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:30.968 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$4149c6df] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:30.983 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.277 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.523 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:50:31.545 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:50:31.556 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.681 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.697 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.744 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.748 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.849 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.948 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:31.955 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$8c184e29] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:50:32.343 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:50:32.380 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:50:32.381 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:50:32.382 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:50:32.550 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:50:32.550 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2822 ms
+2020-01-16 11:50:32.983 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:50:33.069 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:50:33.233 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:50:33.375 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:50:33.507 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:50:33.707 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:50:34.365 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:50:34.372 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:50:35.287 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:50:35.659 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:50:35.684 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:50:35.686 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 6.429 seconds (JVM running for 7.79)
+2020-01-16 11:52:21.872 - INFO  [main] com.warsbull.BlogApplication : Starting BlogApplication on DESKTOP-H8N7A1J with PID 1292 (E:\Projects\blog\system\target\classes started by T6094 in E:\Projects\blog)
+2020-01-16 11:52:21.882 - INFO  [main] com.warsbull.BlogApplication : No active profile set, falling back to default profiles: default
+2020-01-16 11:52:22.765 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:52:22.767 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-16 11:52:22.861 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84ms. Found 1 JPA repository interfaces.
+2020-01-16 11:52:22.874 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-01-16 11:52:22.875 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-01-16 11:52:22.903 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.warsbull.system.sys.dao.UserDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-01-16 11:52:22.904 - INFO  [main] springframework.data.repository.config.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2020-01-16 11:52:23.363 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroProperties' of type [com.warsbull.system.common.security.ShiroProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.364 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'shiroConfig' of type [com.warsbull.system.common.config.ShiroConfig$$EnhancerBySpringCGLIB$$b088077b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.376 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'ehCacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.642 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'sysShiroRealm' of type [com.warsbull.system.common.security.SystemAuthorizingRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.847 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Cache with name 'com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache' does not yet exist.  Creating now.
+2020-01-16 11:52:23.849 - INFO  [main] apache.shiro.cache.ehcache.EhCacheManager : Added EhCache named [com.warsbull.system.common.security.SystemAuthorizingRealm.authorizationCache]
+2020-01-16 11:52:23.853 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.883 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.897 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.935 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'spring.redis-org.springframework.boot.autoconfigure.data.redis.RedisProperties' of type [org.springframework.boot.autoconfigure.data.redis.RedisProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:23.940 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration' of type [org.springframework.boot.autoconfigure.data.redis.LettuceConnectionConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:24.043 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'lettuceClientResources' of type [io.lettuce.core.resource.DefaultClientResources] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:24.144 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConnectionFactory' of type [org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:24.151 - INFO  [main] org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [com.warsbull.system.common.config.RedisConfig$$EnhancerBySpringCGLIB$$fb568ec5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-16 11:52:24.441 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8088 (http)
+2020-01-16 11:52:24.450 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:52:24.452 - INFO  [main] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+2020-01-16 11:52:24.453 - INFO  [main] org.apache.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-16 11:52:24.565 - INFO  [main] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+2020-01-16 11:52:24.565 - INFO  [main] org.springframework.web.context.ContextLoader : Root WebApplicationContext: initialization completed in 2640 ms
+2020-01-16 11:52:25.080 - INFO  [main] hibernate.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-16 11:52:25.245 - INFO  [main] org.hibernate.Version : HHH000412: Hibernate Core {5.4.7.Final}
+2020-01-16 11:52:25.399 - INFO  [main] org.hibernate.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-16 11:52:25.529 - INFO  [main] com.alibaba.druid.pool.DruidDataSource : {dataSource-1} inited
+2020-01-16 11:52:25.627 - INFO  [main] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-01-16 11:52:25.814 - WARN  [main] org.hibernate.id.UUIDHexGenerator : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-01-16 11:52:26.426 - INFO  [main] transaction.jta.platform.internal.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-16 11:52:26.433 - INFO  [main] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-16 11:52:27.354 - INFO  [main] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-16 11:52:27.737 - INFO  [main] org.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler ["http-nio-8088"]
+2020-01-16 11:52:27.760 - INFO  [main] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port(s): 8088 (http) with context path ''
+2020-01-16 11:52:27.762 - INFO  [main] com.warsbull.BlogApplication : Started BlogApplication in 6.285 seconds (JVM running for 7.63)
+2020-01-16 11:52:42.817 - INFO  [http-nio-8088-exec-2] tomcat.util.http.parser.Cookie : A cookie header was received [1578384938; JSESSIONID=FDC60F73FE478631B9DE5B232DB8915B] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-01-16 11:52:42.823 - INFO  [http-nio-8088-exec-2] core.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-16 11:52:42.823 - INFO  [http-nio-8088-exec-2] org.springframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+2020-01-16 11:52:42.833 - INFO  [http-nio-8088-exec-2] org.springframework.web.servlet.DispatcherServlet : Completed initialization in 10 ms
+2020-01-16 11:53:56.002 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:53:56.002 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:53:56.078 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:53:56.102 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:53:56.102 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:20.923 - INFO  [http-nio-8088-exec-3] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:20.923 - INFO  [http-nio-8088-exec-3] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:22.249 - INFO  [http-nio-8088-exec-5] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:22.250 - INFO  [http-nio-8088-exec-5] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:22.935 - INFO  [http-nio-8088-exec-4] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:22.935 - INFO  [http-nio-8088-exec-4] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:23.815 - INFO  [http-nio-8088-exec-6] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:23.815 - INFO  [http-nio-8088-exec-6] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:24.744 - INFO  [http-nio-8088-exec-7] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 11:54:24.744 - INFO  [http-nio-8088-exec-7] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:04.362 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:04.362 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:04.364 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:04.364 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:05.705 - INFO  [http-nio-8088-exec-1] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:05.705 - INFO  [http-nio-8088-exec-1] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:06.666 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:06.666 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:07.336 - INFO  [http-nio-8088-exec-3] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:07.336 - INFO  [http-nio-8088-exec-3] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:07.979 - INFO  [http-nio-8088-exec-5] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:07.979 - INFO  [http-nio-8088-exec-5] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:08.488 - INFO  [http-nio-8088-exec-4] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:08.488 - INFO  [http-nio-8088-exec-4] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:09.160 - INFO  [http-nio-8088-exec-6] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:09.160 - INFO  [http-nio-8088-exec-6] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:09.818 - INFO  [http-nio-8088-exec-7] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:09.819 - INFO  [http-nio-8088-exec-7] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:10.666 - INFO  [http-nio-8088-exec-8] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:10.667 - INFO  [http-nio-8088-exec-8] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:11.887 - INFO  [http-nio-8088-exec-10] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:11.887 - INFO  [http-nio-8088-exec-10] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:13.110 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:13.111 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:17.456 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:17.457 - INFO  [http-nio-8088-exec-2] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:39.400 - INFO  [http-nio-8088-exec-5] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:39.401 - INFO  [http-nio-8088-exec-5] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:40.439 - INFO  [http-nio-8088-exec-4] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:40.439 - INFO  [http-nio-8088-exec-4] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:41.192 - INFO  [http-nio-8088-exec-6] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:41.192 - INFO  [http-nio-8088-exec-6] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:42.122 - INFO  [http-nio-8088-exec-7] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:42.122 - INFO  [http-nio-8088-exec-7] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:57.145 - INFO  [http-nio-8088-exec-10] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:57.145 - INFO  [http-nio-8088-exec-10] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:57.962 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:57.962 - INFO  [http-nio-8088-exec-9] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:59.494 - INFO  [http-nio-8088-exec-1] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:46:59.495 - INFO  [http-nio-8088-exec-1] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:47:13.194 - INFO  [http-nio-8088-exec-3] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
+2020-01-16 12:47:13.194 - INFO  [http-nio-8088-exec-3] apache.shiro.cache.ehcache.EhCacheManager : Using existing EHCache named [userCache]
